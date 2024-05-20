@@ -6,6 +6,12 @@
 /* *****Google Fonts *****  */
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+  --primary-text-color: #383838;
+  --secondary-text-color: #545454;
+  --primary-bg-color: #fed29c;
+}
+
 body {
   font-family: "Jost", sans-serif;
 }
