@@ -25,12 +25,12 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-blue-100 flex justify-between items-center h-24 max-w-[1536px] mx-auto px-6 text-[var(--primary-text-color)]">
+    <div className="flex justify-between items-center h-24 max-w-[1536px] mx-auto px-6 text-[var(--primary-text-color)]">
       {/* Logo */}
       {nav ? (
-        <span className="opacity-0">hi</span>
+        <span className="opacity-0">logo</span>
       ) : (
-        <img src={logo} alt="logo" />
+        <img src={logo} className="w-[131px] sm:w-auto" alt="logo" />
       )}
 
       {/* Desktop Navigation */}
@@ -38,7 +38,7 @@ const Navbar = () => {
         {navItems.map((item) => (
           <li
             key={item.id}
-            className="p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
+            className="py-2 px-4 hover:bg-[#343434] rounded-md m-2 cursor-pointer duration-300 hover:text-white"
           >
             {item.text}
           </li>
@@ -56,7 +56,7 @@ const Navbar = () => {
         {nav ? (
           <AiOutlineClose size={20} className="cursor-pointer" />
         ) : (
-          <AiOutlineMenu size={20} />
+          <AiOutlineMenu size={20} className="cursor-pointer" />
         )}
       </div>
 
@@ -64,7 +64,7 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "fixed lg:hidden left-0 top-0 w-[270px] md:w-[40%] h-full shadow-md bg-white ease-in-out duration-500"
+            ? "fixed z-30 lg:hidden left-0 top-0 w-[270px] md:w-[40%] h-full shadow-md bg-white ease-in-out duration-500"
             : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
         }
       >
