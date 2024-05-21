@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
 import BannarFeature from "../../components/BannarFeature";
+import Img from "../../components/Img";
 
 const Bannar = () => {
   return (
@@ -19,13 +20,13 @@ const Bannar = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={bannarImg} alt="bannar-img" />
+          <Img src={bannarImg} alt="bannar-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bannarImg} alt="bannar-img" />
+          <Img src={bannarImg} alt="bannar-img" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bannarImg} alt="bannar-img" />
+          <Img src={bannarImg} alt="bannar-img" />
         </SwiperSlide>
       </Swiper>
       <BannarFeature />

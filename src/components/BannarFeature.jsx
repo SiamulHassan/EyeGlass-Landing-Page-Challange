@@ -7,7 +7,7 @@ import SearchIcon from "../assets/icons/SearchIcon";
 
 const BannarFeature = () => {
   return (
-    <div className="relative md:absolute bottom-0 z-10 left-1/2 transform -translate-x-1/2 w-full">
+    <div className="relative px-5 md:absolute bottom-0 z-10 left-1/2 transform -translate-x-1/2 w-full">
       <Container>
         <div className="grid grid-cols-2 md:grid-cols-[1fr,auto,1fr,auto,1fr,auto,1fr] lg:grid-cols-[1fr,auto,1fr,auto,1fr,auto,1fr] gap-y-8 md:gap-4 lg:gap-8 justify-center items-center translate-y-[60px] md:translate-y-[140px] xl:translate-y-[158px] 2xl:translate-y-[149px] lg:px-5 xl:px-0">
           <div className="mx-auto md:mx-0 flex flex-col items-center gap-4 md:gap-10 w-max">
