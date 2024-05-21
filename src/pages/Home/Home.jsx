@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar";
 import Bannar from "./Bannar";
 import BannarAd from "./BannarAd";
+import FeaturedProduct from "./FeaturedProduct";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Navbar />
       <Bannar />
       <BannarAd />
+      <FeaturedProduct />
     </>
   );
 };

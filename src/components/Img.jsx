@@ -5,7 +5,7 @@ const Img = ({ src, alt, radius }) => {
     <img
       src={src}
       alt={alt}
-      className={`block w-full h-full object-cover ${radius}`}
+      className={`block w-full h-full object-cover lg:object-fill 2xl:object-cover ${radius}`}
     />
   );
 };
