@@ -18,8 +18,3 @@ const Home = () => {
 };
 
 export default Home;
-// design cart
-// make it dynamic
-// work with filter
-// then add to cart
-// responsive

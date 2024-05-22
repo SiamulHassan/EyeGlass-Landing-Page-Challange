@@ -31,7 +31,6 @@ const Product = () => {
         </div>
         <FilterProduct onSelectCategory={onSelectCategory} />
       </div>
-
       <ProductCart filteredProduct={filteredProduct} />
     </Container>
   );

@@ -3,12 +3,16 @@ import { FaUser } from "react-icons/fa6";
 import logo from "../assets/images/Logo.png";
 
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import AddToCart from "./AddToCart";
+import { CartContext } from "../context/CartContext";
 
 const Navbar = () => {
+  const { cart } = useContext(CartContext);
+  // showing addToCart
+  const [showCart, setShowCart] = useState(false);
   // State to manage the navbar's visibility
   const [nav, setNav] = useState(false);
-
   // Toggle function to handle the navbar's display
   const handleNav = () => {
     setNav(!nav);
@@ -48,7 +52,17 @@ const Navbar = () => {
       {/* right icons */}
       <div className="hidden lg:flex gap-5 items-center">
         <FaUser size={20} className="cursor-pointer" />
-        <IoCart size={23} className="cursor-pointer" />
+        <div className="relative">
+          <span className="absolute top-[-17px] right-0 w-5 h-5 rounded-full bg-[var(--primary-bg-color)] border text-[var(--primary-text-color)] flex justify-center items-center">
+            {cart.length}
+          </span>
+          <IoCart
+            size={23}
+            className="cursor-pointer"
+            onClick={() => setShowCart((prev) => !prev)}
+          />
+        </div>
+        {showCart && <AddToCart />}
       </div>
 
       {/* Mobile Navigation Icon */}
@@ -80,6 +94,22 @@ const Navbar = () => {
             {item.text}
           </li>
         ))}
+        {/* mobile cart */}
+        {/* right icons */}
+        <div className="mt-8 flex gap-5 justify-center items-center">
+          <FaUser size={20} className="cursor-pointer" />
+          <div className="relative">
+            <span className="absolute top-[-17px] right-0 w-5 h-5 rounded-full bg-[var(--primary-bg-color)] border text-[var(--primary-text-color)] flex justify-center items-center">
+              {cart.length}
+            </span>
+            <IoCart
+              size={23}
+              className="mt-1 cursor-pointer"
+              onClick={() => setShowCart((prev) => !prev)}
+            />
+          </div>
+          {showCart && <AddToCart />}
+        </div>
       </ul>
     </div>
   );
