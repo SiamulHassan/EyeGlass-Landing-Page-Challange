@@ -21,7 +21,7 @@ const Navbar = () => {
     { id: 3, text: "Products" },
     { id: 4, text: "Features" },
     { id: 5, text: "Reviews" },
-    { id: 5, text: "Contact Us" },
+    { id: 6, text: "Contact Us" },
   ];
 
   return (

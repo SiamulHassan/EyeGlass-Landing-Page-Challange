@@ -2,6 +2,7 @@ import Navbar from "../../components/Navbar";
 import Bannar from "./Bannar";
 import BannarAd from "./BannarAd";
 import FeaturedProduct from "./FeaturedProduct";
+import Product from "./Product";
 
 const Home = () => {
   return (
@@ -10,8 +11,15 @@ const Home = () => {
       <Bannar />
       <BannarAd />
       <FeaturedProduct />
+      <Product />
+      <p className="mt-[150px]">d</p>
     </>
   );
 };
 
 export default Home;
+// design cart
+// make it dynamic
+// work with filter
+// then add to cart
+// responsive

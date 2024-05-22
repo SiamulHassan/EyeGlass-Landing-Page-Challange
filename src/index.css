@@ -92,7 +92,47 @@ body {
 }
 /* ***** SWIPER JS RESPONSIVE ENDS ***** */
 
-/* ********** BANNAR ADD RESPONSIVE STARTS ********** */
-/* @media screen and (max-width: 500px) {
+/* ********** PRODUCT SWIPER STARTS ********** */
+.productSwiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.productSwiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  border: 1px solid rgba(27, 25, 25, 0.521); /* Example style for the active bullet */
+}
+
+/* .productSwiper .swiper-pagination-bullet {
+  background-color: var(--secondary-text-color);
+  border: 2px solid rgba(92, 25, 25, 0);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.productSwiper .swiper-pagination-bullet-active {
+  background-color: var(--primary-bg-color);
+  border: 3px solid var(--secondary-text-color);
 } */
-/* ********** BANNAR ADD RESPONSIVE ENDS ************ */
+
+/* .productSwiper
+  .swiper-pagination-bullet:nth-child(1):not(.swiper-pagination-bullet-active) {
+  background-color: var(--secondary-text-color);
+  border: 2px solid rgba(253, 56, 56, 0.801);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+.productSwiper
+  .swiper-pagination-bullet:nth-child(2):not(.swiper-pagination-bullet-active) {
+  background-color: var(--secondary-text-color);
+  border: 2px solid rgba(14, 189, 37, 0.87);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+} */
+/* ********** PRODUCT SWIPER STARTS ************ */
