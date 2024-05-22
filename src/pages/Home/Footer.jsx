@@ -16,7 +16,7 @@ const Footer = () => {
             {/* Logo */}
             <div className="w-full md:w-[35%] mb-6 md:mb-0">
               <img src={logo} alt="logo-footer" />
-              <p className="mt-7 mb-8 max-w-[349px]">
+              <p className="mt-7 mb-8 max-w-[349px] md:max-w-[240px] lg:max-w-[300px] xl:max-w-[349px]">
                 Latin literature from 45 BC, making it over 2000 years old.
                 Richard McClintock, a Latin professor at Hampde
               </p>
@@ -40,17 +40,17 @@ const Footer = () => {
               </div>
             </div>
             {/* Support */}
-            <div className="w-full sm:w-1/2 md:w-[21%] mb-6 md:mb-0">
+            <div className="w-1/2 md:w-[21%] mb-6 md:mb-0">
               <h3 className="font-bold text-xl mb-4">Support</h3>
               <FooterList listData={supportLinks} />
             </div>
             {/* Quick Links */}
-            <div className="w-full sm:w-1/2 md:w-[21%] mb-6 md:mb-0">
+            <div className="w-1/2 md:w-[21%] mb-6 md:mb-0">
               <h3 className="font-bold text-xl mb-4">Quick Links</h3>
               <FooterList listData={quickLinks} />
             </div>
             {/* Community */}
-            <div className="w-full sm:w-1/2 md:w-[21%] mb-6 md:mb-0">
+            <div className="w-1/2 md:w-[21%] mb-6 md:mb-0">
               <h3 className="font-bold text-xl mb-4">Community</h3>
               <FooterList listData={communityLinks} />
             </div>
@@ -58,11 +58,11 @@ const Footer = () => {
         </Container>
       </footer>
       <Container>
-        <div className="py-[30px] flex justify-between">
-          <p className="text-sm">
+        <div className="py-[30px] px-5 flex justify-between">
+          <p className="text-sm sm:text-base">
             Copyright &copy; 2023 All rights reserved by Eyeglass
           </p>
-          <div>
+          <div className="flex gap-6 items-center text-sm sm:text-base">
             <Link to="/">Privacy Policy</Link>
             <Link to="/">Terms of service</Link>
           </div>

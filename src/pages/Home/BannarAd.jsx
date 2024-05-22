@@ -8,7 +8,7 @@ import Img from "../../components/Img";
 const BannarAd = () => {
   return (
     <Container>
-      <div className="my-[150px] md:mt-[300px] md:mb-[150px]">
+      <div className="mb-[125px] mt-[150px] md:mt-[300px] md:mb-[150px]">
         <div className="block sm:flex gap-5 md:gap-9 px-5">
           <div className="w-full sm:w-1/2 flex flex-col gap-5 md:gap-9">
             <div className="overflow-hidden">

@@ -8,7 +8,7 @@ const FeaturedProduct = () => {
     <div className="mb-[90px] md:mb-[150px]">
       <div className="bg-[var(--primary-bg-color)] w-full relative">
         <Container>
-          <div className="px-5 py-[126px] w-full lg:w-[52%] pr-5">
+          <div className="px-5 py-[70px] lg:py-[126px] w-full lg:w-[52%] pr-5">
             <Heading>
               Experience clear vision with OptiChroma Vision Frames
             </Heading>
