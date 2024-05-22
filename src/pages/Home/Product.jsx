@@ -4,12 +4,30 @@ import Container from "../../components/Container";
 import DiscountBadge from "../../components/DiscountBadge";
 //icon
 import { FaRegHeart } from "react-icons/fa";
+import FilterProduct from "../../components/FilterProduct";
+import { useState } from "react";
 
 const Product = () => {
+  const [filter, setFilter] = useState("All");
+  const onSelectCategory = (category) => {
+    setFilter(category);
+  };
+  // Filtering porduct item based on selected category
+  const filteredProduct = productData.filter((product) => {
+    if (filter === "All") {
+      return product;
+    } else {
+      return product.category === filter;
+    }
+  });
+
   return (
     <Container>
+      <div>
+        <FilterProduct onSelectCategory={onSelectCategory} />
+      </div>
       <div className="product-cart flex justify-center flex-wrap">
-        {productData.map((product) => (
+        {filteredProduct.map((product) => (
           <div
             className="cart w-full sm:w-[50%] lg:w-[33%] px-5 mb-20 xl:mb-28"
             key={product.id}

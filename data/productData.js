@@ -13,6 +13,7 @@ const productData = [
     discount: 10,
     images: [product1, product2, product4],
     colors: ["#fed29c", "#545454", "#000435"],
+    category: "Special",
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const productData = [
     discount: 10,
     images: [product5, product6, product1],
     colors: ["#fed29c", "#545454", "#000435"],
+    category: "Special",
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ const productData = [
     price: 100,
     images: [product4, product2, product1],
     colors: ["#fed29c", "#545454", "#000435"],
+    category: "Latest",
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ const productData = [
     discount: 10,
     images: [product5, product6, product2],
     colors: ["#fed29c", "#545454", "#000435"],
+    category: "Latest",
   },
   {
     id: 5,
@@ -45,6 +49,7 @@ const productData = [
     price: 100,
     images: [product2, product1, product4],
     colors: ["#fed29c", "#545454", "#000435"],
+    category: "Best Sell",
   },
   {
     id: 6,
@@ -54,6 +59,7 @@ const productData = [
     discount: 10,
     images: [product6, product5, product4],
     colors: ["#fed29c", "#545454", "#000435"],
+    category: "Best Sell",
   },
 ];
 export default productData;
