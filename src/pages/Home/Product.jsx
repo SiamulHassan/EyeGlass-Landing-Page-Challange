@@ -20,19 +20,21 @@ const Product = () => {
   });
 
   return (
-    <Container>
-      <div className=" md:flex justify-between px-5 mb-14">
-        <div>
-          <Heading>Our Products</Heading>
-          <p className="text-base text-[var(--primary-text-color)] mt-5 max-w-[445px]">
-            Experience crystal clear vision and elevated style with our premium
-            collection of eyeglasses.
-          </p>
+    <div className="mb-[100px]">
+      <Container>
+        <div className=" md:flex justify-between px-5 mb-14">
+          <div>
+            <Heading>Our Products</Heading>
+            <p className="text-base text-[var(--primary-text-color)] mt-5 max-w-[445px]">
+              Experience crystal clear vision and elevated style with our
+              premium collection of eyeglasses.
+            </p>
+          </div>
+          <FilterProduct onSelectCategory={onSelectCategory} />
         </div>
-        <FilterProduct onSelectCategory={onSelectCategory} />
-      </div>
-      <ProductCart filteredProduct={filteredProduct} />
-    </Container>
+        <ProductCart filteredProduct={filteredProduct} />
+      </Container>
+    </div>
   );
 };
 

@@ -9,6 +9,7 @@ import { CartContext } from "../context/CartContext";
 
 const Navbar = () => {
   const { cart } = useContext(CartContext);
+
   // showing addToCart
   const [showCart, setShowCart] = useState(false);
   // State to manage the navbar's visibility
