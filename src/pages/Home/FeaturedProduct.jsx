@@ -5,7 +5,7 @@ import Heading from "../../components/Heading";
 import Img from "../../components/Img";
 const FeaturedProduct = () => {
   return (
-    <div className="mb-[150px]">
+    <div className="mb-[90px] md:mb-[150px]">
       <div className="bg-[var(--primary-bg-color)] w-full relative">
         <Container>
           <div className="px-5 py-[126px] w-full lg:w-[52%] pr-5">
